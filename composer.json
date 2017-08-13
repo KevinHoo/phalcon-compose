@@ -34,22 +34,5 @@
         "phalcon-project-path": "/project",
         "phalcon-cache-path": "/project/cache",
         "phalcon-logs-path": "/project/logs"
-    },
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "kevinhoo/phalcon-compose",
-                "version": "2.3.3",
-                "source": {
-                    "url": "https://github.com/KevinHoo/phalcon-compose.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
-        }
-    ],
-    "require": {
-        "kevinhoo/phalcon-compose": "2.3.*"
     }
 }
