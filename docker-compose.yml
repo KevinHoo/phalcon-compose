@@ -93,6 +93,16 @@ services:
     volumes:
       - esdata:/usr/share/elasticsearch/data
 
+  php7:
+      restart: always
+      image: phalconphp/php-fpm
+      volumes:
+        - ./application:/project
+        - ./cache:/project/cache
+        - ./logs:/project/logs
+        - ./conf/php/cli.ini:/etc/php/7.0/cli/conf.d/100-custom.ini
+        - ./conf/php/fpm.ini:/etc/php/7.0/fpm/conf.d/100-custom.ini
+
   app:
     build: docker/app
     restart: always
@@ -104,14 +114,16 @@ services:
       - ./application:/project
       - ./cache:/project/cache
       - ./logs:/project/logs
-      - ./conf/php/cli.ini:/etc/php/7.0/cli/conf.d/100-custom.ini
-      - ./conf/php/fpm.ini:/etc/php/7.0/fpm/conf.d/100-custom.ini
+      - ./conf/nginx/conf.d:/etc/nginx/conf.d
+      - ./conf/nginx/conf.d:/etc/nginx/conf.d
     depends_on:
       - mysql
       - queue
       - redis
       - memcached
       - elasticsearch
+    links:
+      - php7
     env_file:
       - variables.env
 
