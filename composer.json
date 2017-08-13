@@ -48,5 +48,8 @@
                 }
             }
         }
-    ]
+    ],
+    "require": {
+        "kevinhoo/phalcon-compose": "1.0.*"
+    }
 }
