@@ -1,5 +1,5 @@
 {
-    "name": "phalcon/compose",
+    "name": "kevinhoo/phalcon-compose",
     "description": "Open-source and community-driven boilerplate for Phalcon projects by using Docker and Docker Compose",
     "keywords": ["phalcon", "docker", "compose", "boilerplate", "skeleton"],
     "license": "MIT",
@@ -34,5 +34,19 @@
         "phalcon-project-path": "/project",
         "phalcon-cache-path": "/project/cache",
         "phalcon-logs-path": "/project/logs"
-    }
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "kevinhoo/phalcon-compose",
+                "version": "1.0.0",
+                "source": {
+                    "url": "https://github.com/KevinHoo/phalcon-compose.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ]
 }
