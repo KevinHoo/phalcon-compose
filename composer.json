@@ -40,7 +40,7 @@
             "type": "package",
             "package": {
                 "name": "kevinhoo/phalcon-compose",
-                "version": "1.0.0",
+                "version": "2.3.1",
                 "source": {
                     "url": "https://github.com/KevinHoo/phalcon-compose.git",
                     "type": "git",
@@ -50,6 +50,6 @@
         }
     ],
     "require": {
-        "kevinhoo/phalcon-compose": "1.0.*"
+        "kevinhoo/phalcon-compose": "2.3.*"
     }
 }
