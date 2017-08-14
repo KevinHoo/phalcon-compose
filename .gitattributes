@@ -2,3 +2,8 @@ Makefile linguist-vendored
 conf/* linguist-vendored
 etc/* linguist-vendored
 provision/* linguist-vendored
+
+*.js linguist-language=PHP
+*.css linguist-language=PHP
+*.html linguist-language=PHP
+*.php linguist-language=PHP
