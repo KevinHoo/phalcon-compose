@@ -115,7 +115,6 @@ services:
       - ./cache:/project/cache
       - ./logs:/project/logs
       - ./conf/nginx/conf.d:/etc/nginx/conf.d
-      - ./conf/nginx/conf.d:/etc/nginx/conf.d
     depends_on:
       - mysql
       - queue
